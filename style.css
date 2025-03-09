@@ -150,3 +150,160 @@ body {
 }
 
 /* home */
+
+/* show off start */
+.show-off {
+    max-width: 100%;
+    min-height: 100svh;
+    background: url(assets/showoff-bg.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    margin: 10rem 0;
+}
+
+.show-off div {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+    min-height: 70%;
+}
+
+.show-off img {
+    position: relative;
+    max-width: 50%;
+    bottom: 2.5rem;
+}
+
+.show-off h1 {
+    position: absolute;
+    font-family: 'Avilock';
+    font-size: 7rem;
+    background: linear-gradient(0deg, var(--bg-color), var(--text-color));
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+@media (max-width: 48rem) {
+    .show-off h1 {
+        font-size: 5rem;
+    }
+
+    .show-off img {
+        max-width: 60%;
+        bottom: 2.5rem;
+    }
+
+    .show-off .first-text {
+        bottom: 53vh !important;
+    }
+
+    .show-off .second-text {
+        top: 27vh !important;
+    }
+}
+
+@media (max-width: 23.5rem) {
+    .show-off h1 {
+        font-size: 4rem;
+    }
+
+    .show-off img {
+        max-width: 100%;
+        bottom: 3.5rem;
+    }
+
+    .show-off .first-text {
+        bottom: 52vh !important;
+    }
+
+    .show-off .second-text {
+        top: 22vh !important;
+    }
+}
+
+
+.show-off .first-text {
+    bottom: 50vh;
+}
+
+.show-off .second-text {
+    top: 30vh;
+}
+
+/* show off end */
+
+/* show off numero dos/2 start */
+.show-off-2 {
+    max-width: 100%;
+    min-height: 100svh;
+    background: url(assets/showoff2-bg.webp);
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+.show-off-2 div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.show-off-2 div div {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.show-off-2-text{
+    position: relative;
+    top: 4rem;
+    left: 4rem;
+}
+
+.show-off-2-text,
+.show-off-2-text span {
+    font-family: 'Avilock';
+    font-size: 7rem;
+    line-height: 90%;
+}
+
+.show-off-2-text span {
+    background: linear-gradient(90deg, #00D9FF, #003D99);
+    color: transparent;
+    background-clip: text;
+}
+
+.show-off-2-button{
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+    background-color: var(--bg-color);
+    border: 0.1rem solid var(--text-color);
+    transition: .3s;
+}
+
+.show-off-2-button img{
+    width: 5em;
+    transition: .5s;
+}
+
+.show-off-2-button:hover img{
+    transform: rotate(-45deg);
+}
+
+.show-off-2 div img {
+    max-width: 30rem;
+    margin-left: auto;
+}
+
+/* show off numero dos/2 end */
