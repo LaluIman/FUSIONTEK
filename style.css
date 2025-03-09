@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Avilock";
+    src: url('Avilock Bold.ttf') format('trueType');
+}
+
+:root {
+    --bg-color: #0A0A0A;
+    --text-color: #ffffff;
+    --main-blue: #00D9FF;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* nav */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Avilock";
+}
+
+.logo span {
+    color: #00d8ff;
+    font-family: "Avilock";
+}
+
+.menu {
+    align-items: center;
+    display: flex;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 10px 40px;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.404), 0 0 40px rgba(0, 216, 255, 0.6);
+}
+
+.menu a {
+    color: #b3b3b3;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: color 0.3s ease;
+    font-family: "Avilock";
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #00d8ff;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 20px 50px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 216, 255, 0.8), 0 0 40px rgba(0, 216, 255, 0.6);
+    transition: .5s ease;
+    font-family: "Avilock";
+}
+
+.explore-btn:hover {
+    background-color: #00d8ff;
+}
+
+/* nav */
+
+/* home */
+.home-section {
+    text-align: center;
+    padding: 40px;
+    z-index: 1;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: "Avilock";
+
+}
+
+.heading .highlight {
+    background: linear-gradient(to right, #00d8ff, #005f9e);
+    -webkit-background-clip: text;
+    font-family: "Avilock";
+    -webkit-text-fill-color: transparent;
+
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.wave img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* home */
