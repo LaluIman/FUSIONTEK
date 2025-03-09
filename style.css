@@ -396,3 +396,136 @@ body {
     width: 35px;
     height: 35px;
   }
+  .exhibits{
+    margin-top: 100px;
+}
+.container{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    display: flex;
+}
+.card-wrapper{
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+.swiper-wrapper {
+    display: flex;
+}
+.card-list{
+    display: flex;
+    gap: 60px;
+    min-width: max-content; 
+}
+.card-item{
+    position: relative;
+    width: 100%;
+    flex: 0 0 auto; /* Ukuran tetap, tidak mengecil */
+    max-width: 1010px; 
+    /* gap: 10px; */
+}
+.card-item img {
+    width: 100%;
+    height: auto;
+}
+.bag{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 10px;
+    color: black;
+    margin: 20px;
+    padding: 0 10px;
+}
+.bag p{
+    font-family: 'Inter', sans-serif;
+    color: #828282;
+    font-size: 19px;
+    padding: 10px 7px;
+}
+.header-card{
+    font-family: 'Avilock', sans-serif;
+    font-size: 64px;
+}
+.header-card .qc{
+    color: #fff;
+}
+.discover{
+    margin:35px 7px;
+    padding: 7px 7px;
+    width: 123px;
+    height: 38px;
+    border-radius: 69.14px;
+    border: none;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discover a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: .5s;
+}
+.discover a:hover{
+    gap: 10px;
+}
+.material-symbols-outlined{
+    font-size: 18px;
+}
+.bag .ai-item{
+    color: #fff;
+}
+.bag .qc-item{
+    color: #fff;
+}
+.bag .qc{
+    color: #fff;
+}
+.bag .qc-discover{
+    background-color: #C300FF;
+}
+.bag .ai-discover{
+    background-color: #fff;
+   
+}
+.bag .ai-discover a{
+    color: #426200;
+}
+.future{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.future h1{
+    font-family: 'Avilock', sans-serif;
+    font-size: 113.87px;
+    color: #fff;
+}
+.future h1 span{
+    background: linear-gradient(180deg, #000, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Avilock',sans-serif;
+}
+
+footer{
+    margin-top:228px;
+}
+.footer-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+.footer-text span{
+    font-family: 'Avilock',sans-serif;
+}
