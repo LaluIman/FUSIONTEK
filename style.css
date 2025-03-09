@@ -180,7 +180,7 @@ body {
 .show-off h1 {
     position: absolute;
     font-family: 'Avilock';
-    font-size: 7rem;
+    font-size: 10rem;
     background: linear-gradient(0deg, var(--bg-color), var(--text-color));
     color: transparent;
     background-clip: text;
@@ -274,7 +274,7 @@ body {
 }
 
 .show-off-2-text span {
-    background: linear-gradient(90deg, #00D9FF, #003D99);
+    background: linear-gradient(90deg, #00d8ff, #005f9e);
     color: transparent;
     background-clip: text;
 }
