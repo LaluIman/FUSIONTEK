@@ -473,10 +473,13 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
+    
+}
+.discover span{
     transition: .5s;
 }
-.discover a:hover{
-    gap: 10px;
+.discover span:hover{
+   transform: rotate(-45deg);
 }
 .material-symbols-outlined{
     font-size: 18px;
