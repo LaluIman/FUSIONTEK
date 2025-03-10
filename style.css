@@ -574,7 +574,7 @@ footer{
 .container-product{
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin-top: 68px;
 }
 .container-news{
     font-family: 'Inter', sans-serif;
