@@ -249,7 +249,7 @@ body {
         height: 200px;
     }
     .card-item{
-        width: 600px;
+        width: 600px !important;
     }
     .bag h1{
         font-size: 44px;
@@ -320,7 +320,7 @@ body {
         padding: 0 15px;
     }
     .card-item{
-        width: 400px;
+        width: 400px !important;
     }
     .bag h1{
         font-size: 24px;
@@ -335,7 +335,7 @@ body {
         height: 30px;
     }
     .future h1{
-        font-size: 50px;
+        font-size: 50px !important;
     }
     .footer-text{
         font-size: 10px;
@@ -402,22 +402,26 @@ body {
     }
 }
 
-@media (max-width: 23.5rem) {
+@media (max-width: 26.875rem) {
+    .show-off div {
+        min-height: 100%;
+    }
+
     .show-off h1 {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     .show-off img {
-        max-width: 100%;
-        bottom: 3.5rem;
+        max-width: 140%;
+        bottom: 6rem;
     }
 
     .show-off .first-text {
-        bottom: 52vh !important;
+        bottom: 68vh !important;
     }
 
     .show-off .second-text {
-        top: 22vh !important;
+        top: 40vh !important;
     }
 }
 
@@ -501,6 +505,75 @@ body {
     margin-left: auto;
 }
 
+@media (max-width: 48rem) {
+    .show-off-2 {
+        background-size: 500%;
+    }
+
+    .show-off-2 div img{
+        max-width: 20rem;
+    }
+
+    .show-off-2-text {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .show-off-2-text,
+    .show-off-2-text span {
+    font-size: 4rem;
+    }
+
+    .show-off-2-button {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .show-off-2-button img {
+        width: 3em;
+    }
+}
+
+@media (max-width: 26.875rem) {
+    .show-off-2 div {
+        display: flex;
+        flex-direction: column-reverse;
+        place-items: center;
+        gap: 2rem;
+    }
+
+    .show-off-2 div img{
+        max-width: 20rem;
+        margin-left: 0;
+    }
+
+    .show-off-2 div div {
+        margin-right: 0;
+    }
+
+    .show-off-2-text {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .show-off-2-text,
+    .show-off-2-text span {
+    font-size: 4.5rem;
+    }
+
+    .show-off-2-button {
+        position: relative;
+        margin-top: auto;
+        margin-left: auto;
+        right: 4rem;
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .show-off-2-button img {
+        width: 3em;
+    }
+}
 /* show off numero dos/2 end */
 
 /* carousel section */
@@ -1011,7 +1084,7 @@ footer {
     min-height: 80svh;
     display: grid;
     place-items: center;
-    z-index: -999;
+    padding-bottom: 8rem;
 }
 
 .benefit-section-title {
@@ -1041,6 +1114,11 @@ footer {
     gap: 1rem;
 }
 
+.benefit-section-content svg {
+    width: 100%;
+    height: auto;
+}
+
 .benefit-section-content h1 {
     font-size: 2.3rem;
 }
@@ -1049,4 +1127,77 @@ footer {
     font-size: 1.5rem;
 }
 
+@media (max-width: 48rem) {
+    .benefit-section {
+        padding-top: 8rem 0;
+    }
+
+    .benefit-section-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .benefit-section-outer-container {
+        margin: 0 4rem;
+    }
+    
+    .benefit-section-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .benefit-section-content {
+        border-radius: 1rem;
+        padding: 3rem 2rem 2rem;
+    }
+
+    .benefit-section-content svg {
+        width: 4rem;
+    }
+    
+    .benefit-section-content h1 {
+        font-size: 1.7rem;
+    }
+    
+    .benefit-section-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 26.875rem) {
+    .benefit-section {
+        padding: 8rem 0;
+    }
+
+    .benefit-section-title {
+        font-size: 2.3rem;
+        margin-bottom: 3rem;
+    }
+
+    .benefit-section-outer-container {
+        margin: 0 2rem;
+    }
+    
+    .benefit-section-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    
+    .benefit-section-content {
+        border-radius: 1rem;
+        padding: 3rem 2rem 2rem;
+    }
+
+    .benefit-section-content svg {
+        width: 4rem;
+    }
+    
+    .benefit-section-content h1 {
+        font-size: 1.7rem;
+    }
+    
+    .benefit-section-content p {
+        font-size: 1.2rem;
+    }
+}
 /* benefit section end */
