@@ -31,6 +31,6 @@ ScrollReveal({
     delay:200
  });
 
- ScrollReveal().reveal('.heading, .show-off img, .show-off-2-text, .future h1' , { origin: 'bottom'});
- ScrollReveal().reveal('.subheading, .first-text, .show-off-2-button, .future span' , { origin: 'bottom', delay: 800});
- ScrollReveal().reveal('.wave, .second-text, .show-off-2-image' , { origin: 'bottom', delay: 1000 });
+ ScrollReveal().reveal('.heading, .show-off img, .show-off-2-text, .future h1, .heading-container, .immersive-section h1, .container-news h4, .benefit-section-outer-container' , { origin: 'bottom'});
+ ScrollReveal().reveal('.subheading, .first-text, .show-off-2-button, .future span, .home-detail-image, .ellipse, .container-news p, .container-comp img, .benefit-section-content' , { origin: 'bottom', delay: 800});
+ ScrollReveal().reveal('.wave, .second-text, .show-off-2-image, .subheading-container, .line, .container-button, .separator, .container-img, .benefit-section-content p, .benefit-section-content h1' , { origin: 'bottom', delay: 1000 });

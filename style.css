@@ -1056,7 +1056,9 @@ footer {
 .container-product {
     display: flex;
     justify-content: center;
-    margin-top: 68px;
+    margin-top: 80px;
+    height: 90vh;
+    overflow: hidden;
 }
 
 .container-news {
