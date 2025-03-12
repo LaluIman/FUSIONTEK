@@ -10,6 +10,7 @@
     border: none;
     font-family: "Plus Jakarta Sans", sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -322,17 +323,24 @@ body {
     .card-item{
         width: 400px !important;
     }
-    .bag h1{
+    .bag{
+        overflow: hidden;
+        padding: 0;
+    }
+    .bag .header-card{
         font-size: 24px;
     }
     .bag p{
-        font-size: 10px;
+        font-size: 15px !important;
         padding: 10px 5px;
     }
     .discover{
         margin: 5px 5px;
         width: 100px;
         height: 30px;
+    }
+    .discover .material-symbols-outlined{
+        overflow: hidden;
     }
     .future h1{
         font-size: 50px !important;
@@ -404,7 +412,7 @@ body {
 
 @media (max-width: 26.875rem) {
     .show-off div {
-        min-height: 100%;
+        min-height: 80vh;
     }
 
     .show-off h1 {
@@ -840,6 +848,7 @@ footer {
     background-color: #ffffff;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .immersive-section h1 {
@@ -1115,7 +1124,7 @@ footer {
 }
 
 .benefit-section-content svg {
-    width: 100%;
+    width: 20%;
     height: auto;
 }
 
