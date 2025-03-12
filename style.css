@@ -746,14 +746,16 @@ body {
     padding: 20px 50px;
     color: #000;
     margin: 20px;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     box-shadow: 0 0 10px rgba(0, 216, 255, 0.8), 0 0 40px rgba(0, 216, 255, 0.6);
     transition: .5s ease;
     font-family: 'Avilock', sans-serif;
+    align-items: center;
 }
 .future-button:hover{
     background-color: #00d8ff;
+    color: #fff;
 }
 .future h1 {
     font-family: 'Avilock', sans-serif;
@@ -774,7 +776,7 @@ footer {
 
 .footer-text {
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .footer-text span {
