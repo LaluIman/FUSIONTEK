@@ -356,6 +356,26 @@ body {
 }
 
 /* show off start */
+@keyframes idle {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1.875rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.idle{
+    animation-name: idle;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
 .show-off {
     max-width: 100%;
     min-height: 100svh;
