@@ -284,7 +284,7 @@ body {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
     .navbar {
         padding: 20px 15px;
     }
@@ -315,6 +315,9 @@ body {
     .wave {
         height: 350px;
         bottom: 3;
+    }
+    .card-list{
+        padding: 0 15px;
     }
     .card-item{
         width: 400px;
@@ -763,6 +766,7 @@ footer {
     padding: 40px;
     background-color: #ffffff;
     height: 100vh;
+    position: relative;
 }
 
 .immersive-section h1 {
@@ -789,6 +793,145 @@ footer {
     transform: translate(30%, 45%);
     z-index: 0;
 }
+
+/* Responsive styles for tablet */
+@media screen and (max-width: 767px) {
+    /* Home detail section */
+    .home-detail-section {
+        padding: 30px 20px;
+        height: auto;
+        min-height: 100vh;
+        justify-content: flex-start;
+        padding-top: 100px; /* Space for navbar */
+    }
+    
+    .home-detail-image {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 70%;
+        max-width: 400px;
+        margin-bottom: 40px;
+        opacity: 0.7;
+    }
+    
+    .heading-container {
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    .heading-container h1 {
+        font-size: 3.5rem;
+    }
+    
+    .subheading-container {
+        position: relative;
+        top: auto;
+        margin-top: 40px;
+        padding: 0 20px;
+        width: 100%;
+    }
+    
+    .subheading-container p {
+        font-size: 0.9rem;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    
+    .trusted-avatars-row {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .trusted-avatars-row p {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    /* Immersive section */
+    .immersive-section {
+        padding: 30px 20px;
+        height: auto;
+        min-height: 80vh;
+    }
+    
+    .immersive-section h1 {
+        font-size: 2rem;
+        max-width: 90%;
+    }
+    
+    .immersive-section .ellipse {
+        width: 80%;
+        transform: translate(-40%, -40%);
+    }
+    
+    .immersive-section .line {
+        width: 80%;
+        transform: translate(20%, 30%);
+    }
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 430px) {
+    /* Home detail section */
+    .home-detail-section {
+        padding: 20px 15px;
+        padding-top: 80px;
+        text-align: center;
+    }
+    
+    .home-detail-image {
+        width: 90%;
+        margin-bottom: 30px;
+        opacity: 0.6;
+    }
+    
+    .heading-container h1 {
+        font-size: 3.2rem;
+    }
+    
+    .subheading-container {
+        margin-top: 30px;
+    }
+    
+    .subheading-container p {
+        font-size: 1rem;
+    }
+    
+    .trusted-avatars-row p {
+        font-size: 0.90rem;
+    }
+    
+    .avatars img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Immersive section */
+    .immersive-section {
+        padding: 20px 15px;
+        min-height: 70vh;
+        overflow: hidden;
+    }
+    
+    .immersive-section h1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    
+    .immersive-section .ellipse {
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .immersive-section .line {
+        width: 100%;
+        transform: translate(50%, 50%);
+    }
+}
+
+/* second done */
 
 .container-product {
     display: flex;
