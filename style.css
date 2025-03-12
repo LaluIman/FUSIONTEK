@@ -47,6 +47,7 @@ body {
     font-weight: bold;
     color: #fff;
     font-family: "Avilock";
+    text-shadow: 0 0 30px rgba(0, 217, 255, 0.404), 0 0 80px rgba(0, 216, 255, 0.6);
 }
 
 .logo span {
@@ -609,6 +610,7 @@ body {
     display: flex;
     gap: 60px;
     min-width: max-content;
+    overflow-y: hidden !important;
 }
 
 .card-item {
