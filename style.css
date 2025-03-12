@@ -29,7 +29,6 @@ body {
 }
 
 /* nav */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -94,7 +93,53 @@ body {
     background-color: #00d8ff;
 }
 
-/* nav */
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 2000;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 0;
+}
+
+/* Hamburger animation */
+.hamburger.active span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
 
 /* home */
 .home-section {
@@ -113,7 +158,6 @@ body {
     line-height: 1;
     text-transform: uppercase;
     font-family: "Avilock";
-
 }
 
 .heading .highlight {
@@ -148,7 +192,97 @@ body {
     object-fit: cover;
 }
 
-/* home */
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 30px 20px;
+    }
+    
+    .logo {
+        font-size: 35px;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 70%;
+        height: 100vh;
+        border-radius: 0;
+        padding: 100px 0 30px;
+        transition: right 0.5s ease;
+        box-shadow: none;
+    }
+    
+    .menu.active {
+        right: 0;
+        box-shadow: -5px 0 30px rgba(0, 217, 255, 0.4);
+    }
+    
+    .menu a {
+        padding: 20px;
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .explore-btn {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .heading {
+        font-size: 4rem;
+    }
+    
+    .home-section {
+        height: 80vh;
+        padding-bottom: 120px;
+    }
+    
+    .wave {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .navbar {
+        padding: 20px 15px;
+    }
+    
+    .logo {
+        font-size: 28px;
+    }
+    
+    .menu {
+        width: 100%;
+    }
+    
+    .heading {
+        font-size: 3.8rem;
+    }
+    
+    .subheading {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .home-section {
+        height: 75vh;
+        padding-bottom: 80px;
+        justify-content: flex-end;
+    }
+    
+    .wave {
+        height: 350px;
+        bottom: 3;
+    }
+}
 
 /* show off start */
 .show-off {
