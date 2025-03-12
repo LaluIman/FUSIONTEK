@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         menu.classList.toggle('active');
     });
     
-    // Close menu when clicking on a menu item
     const menuItems = document.querySelectorAll('.menu a');
     menuItems.forEach(item => {
         item.addEventListener('click', function() {
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Close menu when clicking outside
     document.addEventListener('click', function(event) {
         if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
             hamburger.classList.remove('active');
@@ -25,3 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+ScrollReveal({ 
+    reset: true,
+    distance:'80px',
+    duration:2000,
+    delay:200
+ });
+
+ ScrollReveal().reveal('.heading, .show-off img, .show-off-2-text, .future h1' , { origin: 'bottom'});
+ ScrollReveal().reveal('.subheading, .first-text, .show-off-2-button, .future span' , { origin: 'bottom', delay: 800});
+ ScrollReveal().reveal('.wave, .second-text, .show-off-2-image' , { origin: 'bottom', delay: 1000 });
