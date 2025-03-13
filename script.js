@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//Animation
+
 ScrollReveal({ 
     reset: true,
     distance:'80px',
@@ -35,7 +37,7 @@ ScrollReveal({
  ScrollReveal().reveal('.subheading, .first-text, .show-off-2-button, .future span, .home-detail-image, .ellipse, .container-news p, .container-comp img, .benefit-section-content' , { origin: 'bottom', delay: 800});
  ScrollReveal().reveal('.wave, .second-text, .show-off-2-image, .subheading-container, .line, .container-button, .separator, .container-img, .benefit-section-content p, .benefit-section-content h1, .future-button' , { origin: 'bottom', delay: 1000 });
 
-//  API Caller 
+// API Caller 
 
 function searchWikipedia() {
     const query = document.getElementById('search-input').value;
@@ -44,7 +46,6 @@ function searchWikipedia() {
         return;
     }
     
-    // Create a more relevant search query by emphasizing exact match
     const formattedQuery = encodeURIComponent(`"${query}" technology`);
     const apiUrl = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${formattedQuery}&format=json&origin=*&srlimit=20`;
     
