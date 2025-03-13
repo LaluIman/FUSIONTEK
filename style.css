@@ -559,7 +559,7 @@ body {
 }
 
 .show-off-2-button img {
-    width: 5em;
+    width: 3em;
     transition: .5s;
 }
 
@@ -1301,14 +1301,19 @@ footer {
 
 /* benefit section end */
 .search {
-    margin-top: 10rem;
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .search-title{
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+    font-family: "Avilock";
+}
+.search-title span{
+    font-family: "Avilock";
+    color: #00d8ff;
 }
 .search-input-container {
     display: flex;
@@ -1317,6 +1322,7 @@ footer {
     margin-bottom: 30px;
     margin-top: 2rem;
     width: 100%;
+    max-width: 100%;
 }
 .search-screen{
     background-color: #000;
@@ -1348,7 +1354,6 @@ button:hover {
     background-color: #666;
 }
 
-/* Container untuk kartu */
 .card-container {
     display: flex;
     justify-content: center;
@@ -1357,7 +1362,6 @@ button:hover {
     margin: 10px;
 }
 
-/* Gaya untuk kartu */
 .card {
     background-color: #222;
     padding: 20px;
@@ -1368,6 +1372,8 @@ button:hover {
 
 .card img {
     width: 100%;
+    height: 30%;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -1391,4 +1397,71 @@ button:hover {
 
 .card a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .search {
+        margin-top: 10rem;
+    }
+
+    .search-title {
+        font-size: 3.5rem;
+    }
+
+    input[type="text"] {
+        width: 300px;
+        font-size: 1.1em;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .card h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 430px) {
+    .search {
+        margin-top: 8rem;
+        padding: 15px;
+    }
+
+    .search-title {
+        font-size: 2.5rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px 15px;
+        font-size: 1em;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .card h2 {
+        font-size: 1.2em;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card a {
+        font-size: 1em;
+    }
 }
