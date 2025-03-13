@@ -1300,3 +1300,95 @@ footer {
 }
 
 /* benefit section end */
+.search {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-title{
+    font-size: 2.5rem;
+}
+.search-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 2rem;
+    width: 100%;
+}
+.search-screen{
+    background-color: #000;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+input[type="text"] {
+    padding: 15px;
+    width: 400px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    padding: 15px 25px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+/* Container untuk kartu */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+/* Gaya untuk kartu */
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #bbb;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 1.1em;
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}

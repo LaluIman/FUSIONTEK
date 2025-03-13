@@ -209,20 +209,29 @@ function searchWikipedia() {
                             const wikipediaUrl = `https://en.wikipedia.org/wiki/${encodeURIComponent(item.title.replace(/\s+/g, '_'))}`;
                             
                             resultItem.innerHTML = `
-                                <div class="result-header">
-                                    <h3>${item.title}</h3>
-                                    ${relevanceIndicator}
-                                </div>
-                                <div class="result-content">
-                                    ${imgHtml}
-                                    <div class="result-text">
-                                        <p>${summary || item.snippet}</p>
-                                        ${categoryHtml}
-                                        <button class="read-more-btn">
-                                            <a href="${wikipediaUrl}" target="_blank">Read full article</a>
-                                        </button>
-                                    </div>
-                                </div>
+                                <div class="card-container">
+            <div class="card">
+                ${imgHtml}
+                <h2>${item.title}</h2>
+                ${relevanceIndicator}
+                <p>${summary || item.snippet}</p>
+                <a href="${wikipediaUrl}" target="_blank">Read full article</a>
+            </div>
+            <div class="card">
+                ${imgHtml}
+                <h2>${item.title}</h2>
+                ${relevanceIndicator}
+                <p>${summary || item.snippet}</p>
+                <a href="${wikipediaUrl}" target="_blank">Read full article</a>
+            </div>
+            <div class="card">
+                ${imgHtml}
+                <h2>${item.title}</h2>
+                ${relevanceIndicator}
+                <p>${summary || item.snippet}</p>
+                <a href="${wikipediaUrl}" target="_blank">Read full article</a>
+            </div>
+        </div>
                             `;
                             
                             results.appendChild(resultItem);
